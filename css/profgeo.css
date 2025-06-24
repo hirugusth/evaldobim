@@ -1,0 +1,95 @@
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Lexend Giga', sans-serif;
+  background:
+    linear-gradient(to bottom, rgba(11, 44, 92, 0.9), rgba(255, 255, 255, 0.1)),
+    url('/imagem/professor.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.header {
+  padding: 40px 60px 20px;
+}
+
+.tiprincipal {
+  font-size: 64px;
+  font-weight: bold;
+}
+.tiprincipallink {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.tiprincipallink:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.subtitulo {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.montanhatop {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 350px;
+  z-index: 3;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 60px;
+  margin-top: 60px;
+}
+
+.descricao {
+  flex: 3;
+  background-color: rgba(0, 0, 50, 0.6);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  color: #fff;
+}
+
+.descricao h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.fotoprof {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.foto img {
+  width: 180px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  margin-bottom: 10px;
+}
+
+.nomeprof {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}

@@ -1,0 +1,79 @@
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Lexend Giga', sans-serif;
+  background-image: 
+    linear-gradient(to bottom, rgba(11, 44, 92, 0.9), rgba(0, 0, 0, 0)),
+    url('/imagem/prova.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 5;
+}
+
+.tiprincipal {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.tiprincipallink {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.tiprincipallink:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.subtitulo {
+  font-size: 16px;
+}
+
+.montanhatop {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 350px;
+  z-index: 3;
+}
+
+.conteudo {
+  max-width: 1000px;
+  margin: 200px auto 30px auto;
+  padding: 20px;
+}
+
+.blocodia {
+  background: rgba(0, 0, 50, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.blocodia h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.blocodia p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+

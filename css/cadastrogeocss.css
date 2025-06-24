@@ -1,0 +1,101 @@
+header{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Lexend Giga', sans-serif;
+  background: 
+    linear-gradient(to bottom, rgba(11, 44, 92, 0.9), rgba(0, 0, 0, 0)),  
+    url('/imagem/login.png') no-repeat center center fixed;              
+  background-size: cover;
+  position: relative;
+}
+
+.montanhatop {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 450px;
+  z-index: 3;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 4;
+  color: white;
+}
+
+.tiprincipal {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: white;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 30, 0.5);
+  width: 500px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  z-index: 4;
+}
+
+.login label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #fffbe6;
+}
+
+.login button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fffbe6;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.botaolink {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #fffbe6;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.botaolink:hover {
+  background: #e6e6cc;
+  cursor: pointer;
+}

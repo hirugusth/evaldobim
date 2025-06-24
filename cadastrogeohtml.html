@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/css/cadastrogeocss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="tiprincipal">Geografia</h1>
+    <p class="subtitulo">sua matéria escolar agora por meio virtual</p>
+  </div>
+
+  <img src="imagem/montanhatopo.png" alt="montanha topo" class="montanhatop">
+
+  <div class="login">
+    <form id = "cadar">
+      <label>Nome completo:</label>
+      <input type="text" id = "nome" placeholder="Seu nome">
+
+      <label>Número da matrícula:</label>
+      <input type="text" id = "numatricula" placeholder="Matrícula">
+
+      <label>Senha:</label>
+      <input type="password" id = "senha" placeholder="Senha">
+   
+      <button type="submit" class="botaolink">Cadastrar</button>
+
+  </form>
+  </div>
+<script>
+    document.getElementById('cadar').addEventListener('submit', function(event) {
+      const nome = document.getElementById('nome').value.trim();
+      const numatricula = document.getElementById('numatricula').value.trim();
+      const senha = document.getElementById('senha').value.trim();
+
+      if (nome === '' || numatricula === ''|| senha === '') {
+        alert('Todos os campos precisam estar preenchidos.');
+        event.preventDefault();  
+      } else {
+      event.preventDefault();
+      window.location.href = "homegeo.html";
+      }
+    });
+  </script>
+</body>
+</html>

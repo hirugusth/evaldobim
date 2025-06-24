@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conhecimento - Geografia</title>
+  <link rel="stylesheet" href="/css/conhecimentogeo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="header">
+  <a href="homegeo.html" class="tiprincipal-link">
+    <h1 class="tiprincipal">Geografia</h1>
+  </a>
+  <p class="subtitulo">sua matéria escolar agora por meio virtual</p>
+</div>
+
+  <img src="imagem/montanhatopo2.png" alt="montanha topo" class="montanhatop">
+
+  <div class="conteudo">
+    <h2>Dissociações da Geografia Moderna</h2>
+    <p>
+      A Geografia Moderna se divide em áreas com focos distintos. A Geopolítica estuda as relações de poder,
+      territórios e conflitos entre países, ligando-se à política e às relações internacionais.
+      Já a Geologia, integrada à Geografia Física, analisa a estrutura e dinâmica interna da Terra,
+      como terremotos e placas tectônicas. Essas dissociações mostram a especialização da Geografia
+      em diferentes campos de estudo.
+    </p>
+
+    <div class="links">
+      <p>Saiba mais sobre GEOPOLÍTICA</p>
+      <a href="https://www.youtube.com/watch?v=_oc67ateF3o" target="#">
+        https://www.youtube.com/watch?v=_oc67ateF3o
+      </a>
+
+      <p>Saiba mais sobre GEOLOGIA</p>
+      <a href="https://www.youtube.com/watch?v=CYyB9PGgyIc" target="#">
+        https://www.youtube.com/watch?v=CYyB9PGgyIc
+      </a>
+    </div>
+  </div>
+
+<div style="max-width: 900px; margin: 20px auto; text-align: center;">
+  <button id="botaocurioso" style="padding: 12px 24px; font-size: 18px; border-radius: 12px; border:none; cursor:pointer; background-color: #0b2c5c; color: white; box-shadow: 0 3px 6px rgba(0,0,0,0.3); transition: background-color 0.3s ease;">
+    Clique aqui para aprender algo novo!
+  </button>
+  <p id="curiosotexto" style="margin-top: 15px; font-size: 20px; font-style: italic; min-height: 60px;"></p>
+</div>
+
+<script>
+  const curiosidade = [
+    "O Monte Everest é a montanha mais alta da Terra, com 8.848 metros de altitude.",
+    "O Deserto do Saara é o maior deserto quente do mundo, cobrindo cerca de 9 milhões de km².",
+    "A Amazônia é a maior floresta tropical do planeta, produzindo aproximadamente 20% do oxigênio da Terra.",
+    "O rio Amazonas é o maior em volume de água do mundo, com mais de 7.000 km de extensão.",
+    "A Fossa das Marianas é o ponto mais profundo dos oceanos, chegando a cerca de 11 km abaixo do nível do mar.",
+    "O país com maior número de fusos horários é a França, considerando seus territórios ultramarinos.",
+    "A Grande Barreira de Coral, na Austrália, é o maior sistema de recifes de corais do mundo.",
+    "A cidade de Veneza é famosa por seus canais e é construída sobre mais de 100 pequenas ilhas.",
+    "A latitude e longitude são usadas para determinar qualquer ponto na superfície terrestre.",
+    "O clima mediterrâneo é caracterizado por verões quentes e secos e invernos suaves e úmidos."
+  ];
+
+  const botao = document.getElementById('botaocurioso');
+  const texto = document.getElementById('curiosotexto');
+
+  botao.addEventListener('click', () => {
+    const indice = Math.floor(Math.random() * curiosidade.length);
+    texto.textContent = curiosidade[indice];
+  });
+</script>
+
+</body>
+</html>
